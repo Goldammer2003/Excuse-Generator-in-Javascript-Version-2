@@ -17,5 +17,10 @@ window.onload = function(
   let verb = ["ate" "stole" "run away with my "]
   let item = ["homework" "assigment" ]
   let place = ["at my home" "in my yard"]
+
+  let pronounIndex = Mathfloor (Math.random ()* pronoun.length );
+  let subjectIndex =Mathfloor (Math.random () * subject.length);
+  let verbIndex    =Mathfloor (Math.random () *verb.length); 
+  let itemIndex    =Mathfloor (Math. random ()* item.length); 
 }
 
