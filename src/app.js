@@ -22,5 +22,20 @@ window.onload = function(
   let subjectIndex =Mathfloor (Math.random () * subject.length);
   let verbIndex    =Mathfloor (Math.random () *verb.length); 
   let itemIndex    =Mathfloor (Math. random ()* item.length); 
+  let placeIndex   =Mathfloor (Math.random () * place.length)
+
+  return {
+    pronoun [pronounIndex] + 
+    " " + 
+    subject [subjectIndex] + 
+    " " + 
+    verb [verbIndex] + 
+    " " + 
+    item [itemIndex] + 
+    "" + 
+  }
+
 }
+
+
 
