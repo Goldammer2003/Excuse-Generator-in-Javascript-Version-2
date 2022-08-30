@@ -32,7 +32,9 @@ window.onload = function(
     verb [verbIndex] + 
     " " + 
     item [itemIndex] + 
-    "" + 
+    " " + 
+    place [placeIndex] + 
+    " " + 
   }
 
 }
