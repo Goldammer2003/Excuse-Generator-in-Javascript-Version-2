@@ -2,42 +2,33 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+document.getElementById("thebutton").onclick = function() {
+  document.querySelector("#excuse").innerHTML = ExcuseGen();
+  console.log("Test" + ExcuseGen);
+};
 
-window.onload = function(
-  document.qerySelector (#excuse). innerHTML =ExcuseGen ();
-  console.log "Test+ExcuseGen";
-) {};
+let ExcuseGen = () => {
+  let pronoun = ["The", "A"];
+  let subject = ["dog", "cat", "my pet"];
+  let verb = ["ate", "stole", "run away with my "];
+  let item = ["homework", "assigment"];
+  let place = ["at my home", "in my yard"];
 
+  let pronounIndex = Math.floor(Math.random() * pronoun.length);
+  let subjectIndex = Math.floor(Math.random() * subject.length);
+  let verbIndex = Math.floor(Math.random() * verb.length);
+  let itemIndex = Math.floor(Math.random() * item.length);
+  let placeIndex = Math.floor(Math.random() * place.length);
 
- let ExcuseGen =() => {
-  let pronoun = ["The" "A"]
-  let subject = ["dog" "cat" "my pet" ]
-  let verb = ["ate" "stole" "run away with my "]
-  let item = ["homework" "assigment" ]
-  let place = ["at my home" "in my yard"]
-
-  let pronounIndex = Mathfloor (Math.random ()* pronoun.length );
-  let subjectIndex =Mathfloor (Math.random () * subject.length);
-  let verbIndex    =Mathfloor (Math.random () *verb.length); 
-  let itemIndex    =Mathfloor (Math. random ()* item.length); 
-  let placeIndex   =Mathfloor (Math.random () * place.length)
-
-  return {
-    pronoun [pronounIndex] + 
-    " " + 
-    subject [subjectIndex] + 
-    " " + 
-    verb [verbIndex] + 
-    " " + 
-    item [itemIndex] + 
-    " " + 
-    place [placeIndex] + 
-    " " + 
-  }
-
-}
-
-
-
+  return (
+    pronoun[pronounIndex] +
+    " " +
+    subject[subjectIndex] +
+    " " +
+    verb[verbIndex] +
+    " " +
+    item[itemIndex] +
+    " " +
+    place[placeIndex]
+  );
+};
