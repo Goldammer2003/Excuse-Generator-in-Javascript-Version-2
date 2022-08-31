@@ -3,7 +3,7 @@ import "bootstrap";
 import "./style.css";
 
 document.getElementById("thebutton").onclick = function() {
-  document.querySelector("#excuse").innerHTML = ExcuseGen();
+  document.querySelector("#Excuse").innerHTML = ExcuseGen();
   console.log("Test" + ExcuseGen);
 };
 
