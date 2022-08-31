@@ -2,12 +2,12 @@
 import "bootstrap";
 import "./style.css";
 
-document.getElementById("thebutton").onclick = function() {
-  document.querySelector("#Excuse").innerHTML = ExcuseGen();
-  console.log("Test" + ExcuseGen);
-};
+document.getElementById("thebutton").addEventListener("click", function() {
+  document.querySelector("#excuse").innerText = excuseGen();
+  console.log("Test" + excuseGen);
+});
 
-let ExcuseGen = () => {
+let excuseGen = () => {
   let pronoun = ["The", "A"];
   let subject = ["dog", "cat", "my pet"];
   let verb = ["ate", "stole", "run away with my "];
