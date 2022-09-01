@@ -9,10 +9,10 @@ document.getElementById("thebutton").addEventListener("click", function() {
 
 let excuseGen = () => {
   let pronoun = ["The", "A"];
-  let subject = ["dog", "cat", "my pet"];
-  let verb = ["ate", "stole", "run away with my "];
-  let item = ["homework", "assigment"];
-  let place = ["at my home", "in my yard"];
+  let subject = ["dog", "cat", "my pet" "stranger" "friend" "homeless man "];
+  let verb = ["ate", "stole", "run away with my " "peed on" "chewed on" ];
+  let item = ["homework", "assigment" "my notes" ];
+  let place = ["at my home", "in my yard" "in my garden" ];
 
   let pronounIndex = Math.floor(Math.random() * pronoun.length);
   let subjectIndex = Math.floor(Math.random() * subject.length);
